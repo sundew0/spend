@@ -17,4 +17,7 @@ function next_day_function() {
     } catch (typeerror) {
         console.log("first day");
     }
+    
+    var activeday = document.getElementsByClassName('day-active');
+    
 }
