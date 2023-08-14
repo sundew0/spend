@@ -1,0 +1,51 @@
+html{
+    background-color: rgb(27, 27, 30);
+    color: rgb(240, 240, 240);
+    font-size: 100px;
+    text-align: center;
+}
+ h1{
+    font-size: 100px;
+    text-align: center;
+}
+.start{
+    left: 50%;
+    top: 50%;
+}
+.center{
+    margin: auto;
+    display: block;
+
+}
+.sidebar{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    background-color: #282828;
+    overflow:visible;
+    scroll-behavior: unset;
+}
+.sidebar p{
+    font-size: 20px;
+    border-left: 50%;
+}
+.days{
+    color: #c5c5c58e;
+}
+.day-active{
+    background-color: rgb(204, 123, 47);
+    border-radius: 50%;
+    color: #131313;
+}
+.day-past{
+    color: #c5c5c50f;
+}
+
+.next-day-button{
+    background-color: #c79112;
+    border: none;
+    border-radius: 50%;
+    font-size: 100px;
+}
