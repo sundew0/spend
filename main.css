@@ -4,7 +4,8 @@ html{
     font-size: 100px;
     text-align: center;
 }
- h1{
+
+h1{
     font-size: 100px;
     text-align: center;
 }
@@ -17,6 +18,7 @@ html{
     display: block;
 
 }
+
 .sidebar{
     height: 100%;
     position: fixed;
@@ -28,7 +30,15 @@ html{
     
     scroll-behavior: smooth;
 }
-
+.sidebarbtn{
+    position: fixed;
+    top: 40%;
+    right:0;
+    margin: auto;
+    display: block;
+    text-align: center;
+    background: #ffffff;
+}
 .sidebar p{
     font-size: 25px;
     border-left: 50%;
@@ -50,4 +60,30 @@ html{
     border: none;
     border-radius: 50%;
     font-size: 100px;
+}
+
+.sidebarshowami{
+    animation: sidebarshow 1s;
+}
+
+
+@media screen and (min-width: 1100px){
+.sidebar{
+    opacity: 0;
+
+
+}
+}
+
+@media screen and (max-width: 1100px){
+.sidebar{
+    opacity: 0;
+}
+
+
+}
+
+@keyframes sidebarshow{
+    0%{ background-color: #fff;}
+    100%{ background-color: aqua;}
 }

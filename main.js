@@ -20,3 +20,8 @@ function next_day_function() {
     
     
 }
+while (true){
+var test = document.getElementById('sidebarbtn');
+test.onclick;
+console.log(test);
+}
