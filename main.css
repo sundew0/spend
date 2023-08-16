@@ -51,3 +51,9 @@ html{
     border-radius: 50%;
     font-size: 100px;
 }
+.open-option{
+    opacity: 1;
+}
+.hidden-option{
+    opacity: 0;
+}
