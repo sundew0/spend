@@ -21,5 +21,8 @@ function next_day_function() {
 
 
 function show_options() {
-    
+    var option_area = document.getElementById("options")
+    var text = document.createElement('p')
+    p.textContent = 'test'
+    option_area.appendChild(p)
 }
