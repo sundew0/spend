@@ -17,6 +17,9 @@ function next_day_function() {
     } catch (typeerror) {
         console.log("first day");
     }
-    
+}
+
+
+function show_options() {
     
 }
