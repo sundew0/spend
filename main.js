@@ -7,6 +7,7 @@ function next_day_function() {
 
     try {
         document.getElementById("days-"+day).classList = "day-active";
+        show_options()
     } catch (error) {
         console.log("Last day")
         document.getElementById("next-day").style.display = 'none';
@@ -14,6 +15,7 @@ function next_day_function() {
     
     try {
        document.getElementById("days-"+pastday).classList = "day-past";
+        
     } catch (typeerror) {
         console.log("first day");
     }
