@@ -28,7 +28,4 @@ function show_options() {
     var text = document.createElement('p')
     
     option_area.innerHTML = '<p>hello</p>';
-    p.textContent = 'test'
-    option_area.appendChild(p)
-    option_area.innerHTML =  p;
 }
