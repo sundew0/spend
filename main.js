@@ -21,7 +21,10 @@ function next_day_function() {
     
 }
 while (true){
-var test = document.getElementById('sidebarbtn');
-test.onclick;
-console.log(test);
+var sidebarbtn = document.getElementById('sidebarbtn');
+var sidebar = document.getElementById('sidebar')
+sidebarbtn.onclick(sidebar.style.opacity = 1)
+
+
 }
+
