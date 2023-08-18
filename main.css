@@ -69,9 +69,10 @@ h1{
 
 @media screen and (min-width: 1001100px){
 .sidebar{
-    opacity: 1;
-
-
+    opacity: 0;
+}
+.sidebarbtn{
+    opacity:1 ;
 }
 }
 
