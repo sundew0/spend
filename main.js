@@ -22,8 +22,10 @@ function next_day_function() {
 }
 while (true){
 var sidebarbtn = document.getElementById('sidebarbtn');
-var sidebar = document.getElementById('sidebar')
-sidebarbtn.onclick(sidebar.style.opacity = 1)
+var sidebar = document.getElementById('sidebar');
+var option_area = document.getElementById('options');
+sidebarbtn.onclick(sidebar.style.opacity = 1; 
+     option_area.innerHTML = '<p>hello</p>');
 
 
 }
