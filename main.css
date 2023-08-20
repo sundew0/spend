@@ -67,16 +67,16 @@ h1{
 }
 
 
-@media screen and (min-width: 1001100px){
+@media screen and (min-width: 1100px){
 .sidebar{
-    opacity: 0;
+    opacity: 1;
 }
 .sidebarbtn{
-    opacity:1 ;
+    opacity:0 ;
 }
 }
 
-@media screen and (max-width: 1001100px){
+@media screen and (max-width: 1100px){
 .sidebar{
     opacity: 0;
 }
