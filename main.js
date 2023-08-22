@@ -31,7 +31,7 @@ function sidebarbtnclick(){
     sidebarbtn.style.opacity = 0; 
 
     sidebarbtn.style.pointerEvents = 'none';
-    option_area.innerHTML = '<p>hello</p>';
+    sidebar.style.pointerEvents = 'auto';
 }
 
 const options = {
