@@ -83,7 +83,17 @@ h1{
 #optionText{
     font-size: 40px;
 }
-
+progress{
+    height: 100px;
+    width: 300px;
+    border: none;
+    border-radius: 10%;
+    
+}
+#health{
+    color: red;
+    background-color: green;
+}
 @media screen and (min-width: 1100px){
 .sidebar{
     opacity:1;
