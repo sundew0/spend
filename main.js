@@ -18,16 +18,35 @@ function next_day_function() {
         console.log("first day");
     }
     
+    newoption()
     
 }
-while (true){
-var sidebarbtn = document.getElementById('sidebarbtn');
-var sidebar = document.getElementById('sidebar');
-var option_area = document.getElementById('options');
-    sidebar.onclick = function sidebarbtnclick(){sidebar.style.opacity = 1; 
-     option_area.innerHTML = '<p>hello</p>';};
+function sidebarbtnclick(){
+    var sidebarbtn = document.getElementById('sidebarbtn');
+    var sidebar = document.getElementById('sidebar');
+    var option_area = document.getElementById('options');
+    var nextdaybtn = document.getElementsByClassName('next-day-button');
+    
+    sidebar.style.opacity = 1;
+    sidebarbtn.style.opacity = 0; 
 
-
-
+    sidebarbtn.style.pointerEvents = 'none';
+    option_area.innerHTML = '<p>hello</p>';
 }
 
+const options = {
+payment:    [{title:"bill", optiontext:"text", buttonCount:2, button1:"button1",button2:"button 2"},
+            {title:"title2", optiontext:"text2"}],
+
+}
+function newoption()
+{
+    
+    
+    const optionsList = options['payment'];
+    const randomOption = Math.floor(Math.random() * optionsList.length);
+    const optionTitle = document.getElementById('optionTitle')
+    const optionText = document.getElementById('optionText')
+    optionTitle.innerHTML = '<h1>' + optionsList[randomOption]['title'] + '</h1>';
+    optionText.innerHTML = '<p>' + optionsList[randomOption]['optiontext'] + '</p>';
+}

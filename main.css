@@ -3,6 +3,9 @@ html{
     color: rgb(240, 240, 240);
     font-size: 100px;
     text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 h1{
@@ -32,12 +35,14 @@ h1{
 }
 .sidebarbtn{
     position: fixed;
-    top: 40%;
+    top: 0%;
     right:0;
     margin: auto;
     display: block;
     text-align: center;
-    background: #ffffff;
+    background: #775900;
+    border-radius: 50%;
+    
 }
 .sidebar p{
     font-size: 25px;
@@ -58,21 +63,37 @@ h1{
 .next-day-button{
     background-color: #c79112;
     border: none;
-    border-radius: 50%;
+    border-radius: 10%;
     font-size: 100px;
+    width: 250px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
 }
 
 .sidebarshowami{
     animation: sidebarshow 1s;
 }
-
+#options{
+    background-color: #0c8078;
+    border-radius: 20%;
+    width: 500px;
+    height: 500px;
+}
+#optionText{
+    font-size: 40px;
+}
 
 @media screen and (min-width: 1100px){
 .sidebar{
-    opacity: 1;
+    opacity:1;
+    pointer-events:stroke;
 }
 .sidebarbtn{
     opacity:0 ;
+}
+.next-day-button{
+    right:100px
 }
 }
 
@@ -87,6 +108,6 @@ h1{
 }
 
 @keyframes sidebarshow{
-    0%{ background-color: #fff;}
-    100%{ background-color: aqua;}
+    0%{transform: translate(100px, 0);}
+    100%{transform: translate(-100px, 0); }
 }
