@@ -45,9 +45,15 @@ function foodbar()
     const foodbar = document.getElementById('food');
     foodbar.value = foodbar.value -= 25;
 }
+function healthbar()
+{
+    const healthbar = document.getElementById('health');
+    healthbar.value -= 25;
+    console.log(healthbar.value)
+}
 function newoption()
 {
-    
+    healthbar()
     
     const optionsList = options['payment'];
     const randomOption = Math.floor(Math.random() * optionsList.length);
