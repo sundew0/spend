@@ -11,13 +11,13 @@ function next_day_function() {
         console.log("Last day")
         document.getElementById("next-day").style.display = 'none';
     }
-    if (day=>2){
+    
     try {
        document.getElementById("days-"+pastday).classList = "day-past";
     } catch (typeerror) {
-        console.alert(typeerror);
+        console.log("first day");
     }
-    }
+    
     newoption()
     
 }
@@ -35,27 +35,18 @@ function sidebarbtnclick(){
 }
 
 const options = {
-optiontype:  ["payment","childEvent"],
 payment:    [{title:"bill", optiontext:"text", buttonCount:2, button1:"button1",button2:"button 2"},
             {title:"title2", optiontext:"text2"}],
-childEvent: [{title:"child", optiontext:"wants to play"}]
 
-}
-
-function foodbar()
-{
-    const foodbar = document.getElementById('food');
-    foodbar.value = foodbar.value -= 25;
 }
 function newoption()
 {
     
-    const optionType = otptions['optiontype'];
-    const randomOptionType = Math.floor(Math.random() * optionType.length);
-    const optionsList = options[optionType[randomOptionType]];
+    
+    const optionsList = options['payment'];
     const randomOption = Math.floor(Math.random() * optionsList.length);
-    const optionTitle = document.getElementById('optionTitle');
-    const optionText = document.getElementById('optionText');
+    const optionTitle = document.getElementById('optionTitle')
+    const optionText = document.getElementById('optionText')
     optionTitle.innerHTML = '<h1>' + optionsList[randomOption]['title'] + '</h1>';
     optionText.innerHTML = '<p>' + optionsList[randomOption]['optiontext'] + '</p>';
 }
