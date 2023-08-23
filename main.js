@@ -11,13 +11,13 @@ function next_day_function() {
         console.log("Last day")
         document.getElementById("next-day").style.display = 'none';
     }
-    
+    if (day=>2){
     try {
        document.getElementById("days-"+pastday).classList = "day-past";
     } catch (typeerror) {
-        console.log("first day");
+        console.alert(typeerror);
     }
-    
+    }
     newoption()
     
 }
