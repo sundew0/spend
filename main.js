@@ -32,12 +32,18 @@ function sidebarbtnclick(){
 
     sidebarbtn.style.pointerEvents = 'none';
     sidebar.style.pointerEvents = 'auto';
+    foodbar()
 }
 
 const options = {
 payment:    [{title:"bill", optiontext:"text", buttonCount:2, button1:"button1",button2:"button 2"},
             {title:"title2", optiontext:"text2"}],
 
+}
+function foodbar()
+{
+    const foodbar = document.getElementById('food');
+    foodbar.value = foodbar.value -= 25;
 }
 function newoption()
 {
