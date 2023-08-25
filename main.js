@@ -40,19 +40,34 @@ payment:    [{title:"bill", optiontext:"text", buttonCount:2, button1:"button1",
             {title:"title2", optiontext:"text2"}],
 
 }
+var hunger = false;
 function foodbar()
 {
     const foodbar = document.getElementById('food');
-    foodbar.value = foodbar.value -= 25;
+    foodbar.value = foodbar.value -= 20;
+    console.log(foodbar.value);
+    if (!foodbar.value) {
+        console.warn('you are dying of hunger ♥');
+        hunger = true;
+       
+    }
 }
 function healthbar()
 {
-    const healthbar = document.getElementById('health');
-    healthbar.value -= 25;
-    console.log(healthbar.value)
+    const healthbar = document.getElementById('Health');
+    console.log(healthbar.value);
+    if (hunger){
+        healthbar.value -= 20;
+    } else {
+        healthbar.value -= 5;
+    }
+    if (!healthbar.value) {
+        console.warn('you are dead ♥');
+    }
 }
 function newoption()
 {
+    foodbar()
     healthbar()
     
     const optionsList = options['payment'];

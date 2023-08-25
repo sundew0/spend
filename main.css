@@ -92,11 +92,17 @@ progress{
     left: 0;
     position: fixed;
 }
-#health{
-    background-color: #ff0000;
+#Health::-moz-progress-bar { background: #ff0000; }
+#Health::-webkit-progress-value { background: #ff0000; }
+#Health{
+    background: #ff0000;
 }
+
+#food::-moz-progress-bar { background: rgb(105, 52, 37); }
+#food::-webkit-progress-value { background: rgb(105, 52, 37); }
 #food{
-    background-color: brown;
+    color: rgb(105, 52, 37);
+    top: 50px;
 }
 @media screen and (min-width: 1100px){
 .sidebar{
