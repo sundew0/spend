@@ -32,7 +32,7 @@ function sidebarbtnclick(){
 
     sidebarbtn.style.pointerEvents = 'none';
     sidebar.style.pointerEvents = 'auto';
-    foodbar()
+    
 }
 
 const options = {
