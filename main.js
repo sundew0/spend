@@ -65,6 +65,18 @@ function healthbar()
         console.warn('you are dead ♥');
     }
 }
+function dead()
+{
+    const nextDayBtn = document.getElementById('next-day');
+    nextDayBtn.style.opacity = 0;
+    nextDayBtn.style.pointerEvents = 'none';
+
+    const optionTitle = document.getElementById('optionTitle')
+    const optionText = document.getElementById('optionText')
+    optionTitle.innerHTML = '<h1> you died </h1>';
+    optionText.innerHTML = '<p> nice try </p>';
+    
+}
 function newoption()
 {
     foodbar()
