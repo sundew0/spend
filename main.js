@@ -62,6 +62,7 @@ function healthbar()
         healthbar.value -= 5;
     }
     if (!healthbar.value) {
+        dead();
         console.warn('you are dead ♥');
     }
 }
@@ -71,8 +72,8 @@ function dead()
     nextDayBtn.style.opacity = 0;
     nextDayBtn.style.pointerEvents = 'none';
 
-    const optionTitle = document.getElementById('optionTitle')
-    const optionText = document.getElementById('optionText')
+    const optionTitle = document.getElementById('optionTitle');
+    const optionText = document.getElementById('optionText');
     optionTitle.innerHTML = '<h1> you died </h1>';
     optionText.innerHTML = '<p> nice try </p>';
     
