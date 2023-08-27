@@ -80,8 +80,6 @@ function dead()
 }
 function newoption()
 {
-    foodbar()
-    healthbar()
     
     const optionsList = options['payment'];
     const randomOption = Math.floor(Math.random() * optionsList.length);
@@ -89,4 +87,7 @@ function newoption()
     const optionText = document.getElementById('optionText')
     optionTitle.innerHTML = '<h1>' + optionsList[randomOption]['title'] + '</h1>';
     optionText.innerHTML = '<p>' + optionsList[randomOption]['optiontext'] + '</p>';
+
+    foodbar()
+    healthbar()
 }
