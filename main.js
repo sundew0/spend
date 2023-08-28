@@ -94,4 +94,5 @@ function newoption()
 const moneyCounter = document.getElementById('moneyCounter');
 var money = 1000;
 moneyCounter.innerText = money + '$';
+console.alert(moneyCounter.innerText)
 
