@@ -91,3 +91,7 @@ function newoption()
     foodbar()
     healthbar()
 }
+const moneyCounter = document.getElementById('moneyCounter');
+var money = 1000;
+moneyCounter.value = money + '$';
+
