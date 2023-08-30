@@ -35,11 +35,6 @@ function sidebarbtnclick(){
     
 }
 
-const options = {
-payment:    [{title:"bill", optiontext:"text", buttonCount:2, button1:"button1",button2:"button 2"},
-            {title:"title2", optiontext:"text2"}],
-
-}
 var hunger = false;
 function foodbar()
 {
@@ -78,6 +73,15 @@ function dead()
     optionText.innerHTML = '<p> nice try </p>';
     
 }
+const options = {
+payment:    [{title:"bill", optiontext:"text", buttonCount:2, button1:"button1",button2:"button 2"},
+            {title:"title2", optiontext:"text2"}],
+
+}
+function optionButton()
+{
+    null
+}
 function newoption()
 {
     
@@ -91,11 +95,11 @@ function newoption()
     foodbar()
     healthbar()
 }
-const moneyCounter = document.getElementById('moneyCounter');
-var money = 1000;
-while true{
-    money += 1;
-}
-moneyCounter.innerText = money + '$';
-console.alert(moneyCounter.innerText)
 
+
+
+function writeMoney(money){
+    const moneyCounter = document.getElementById('moneyCounter');
+    var money = 1000;
+    moneyCounter.innerText = money + '$';   
+}
