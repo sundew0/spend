@@ -93,7 +93,9 @@ function newoption()
 }
 const moneyCounter = document.getElementById('moneyCounter');
 var money = 1000;
-money += 1;
+while true{
+    money += 1;
+}
 moneyCounter.innerText = money + '$';
 console.alert(moneyCounter.innerText)
 
