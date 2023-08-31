@@ -96,7 +96,7 @@ function newoption()
     healthbar()
 }
 
-
+window.alert('test');
 
 function writeMoney(money){
     const moneyCounter = document.getElementById('moneyCounter');
