@@ -74,19 +74,32 @@ function dead()
     
 }
 const options = {
-payment:    [{title:"bill", optiontext:"text", buttonCount:2, button1:"button1",button2:"button 2"},
-            {title:"title2", optiontext:"text2"}],
+payment:    [{title:"bill", optiontext:"text", buttonCount:3, button1:"button1",button2:"button 2"},
+            {title:"title2", optiontext:"text2", buttonCount:3, button1:"button1"}],
 
 }
-function optionButton()
+function optionButton(optionChoice)
 {
-    null
+    const optionsList = options['payment'];
+    var buttonCount = optionsList[optionChoice]['buttonCount']
+    const buttonArea = document.getElementById('buttonArea')
+    if (buttonCount == 1){
+
+    }if (buttonCount == 2) {
+
+    }if (buttonCount == 3){
+
+    }
+}
+function buttonOutput(buttonNumber, optionChoice){
+    const buttonArea = document.getElementById('buttonArea')
 }
 function newoption()
 {
     
     const optionsList = options['payment'];
     const randomOption = Math.floor(Math.random() * optionsList.length);
+    optionButton(randomOption)
     const optionTitle = document.getElementById('optionTitle')
     const optionText = document.getElementById('optionText')
     optionTitle.innerHTML = '<h1>' + optionsList[randomOption]['title'] + '</h1>';
@@ -96,7 +109,6 @@ function newoption()
     healthbar()
 }
 
-window.alert('test');
 
 function writeMoney(money){
     const moneyCounter = document.getElementById('moneyCounter');

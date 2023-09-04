@@ -116,7 +116,15 @@ progress{
     right:100px
 }
 }
-
+#buttonArea{
+    background-color: #0c8078;
+    width: 500px;
+    height: 300px;
+}
+#buttonArea button{
+    width: 200px;
+    height: 100px;    
+}
 @media screen and (max-width: 1100px){
 .sidebar{
     opacity: 0;
@@ -124,7 +132,6 @@ progress{
 .sidebarbtn{
     opacity: 1;
 }
-
 }
 
 @keyframes sidebarshow{
