@@ -19,7 +19,7 @@ function next_day_function() {
     }
     
     newoption()
-    
+    writeMoney()
 }
 function sidebarbtnclick(){
     var sidebarbtn = document.getElementById('sidebarbtn');
@@ -110,7 +110,7 @@ function newoption()
 }
 
 
-function writeMoney(money){
+function writeMoney(Money){
     laodingMoney = Math.randomInt(1000, 100)
     const moneyCounter = document.getElementById('moneyCounter');
     var money = 1000;
