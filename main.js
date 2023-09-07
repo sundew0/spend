@@ -111,7 +111,9 @@ function newoption()
 
 
 function writeMoney(money){
+    laodingMoney = Math.randomInt(1000, 100)
     const moneyCounter = document.getElementById('moneyCounter');
     var money = 1000;
+    money = loadingMoney;
     moneyCounter.innerText = money + '$';   
 }
